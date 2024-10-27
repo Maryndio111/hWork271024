@@ -1,5 +1,6 @@
 public class Product {
-    String name;
+
+    private String name;
     private int quantity;
     private double price;
     private double rating;

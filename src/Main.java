@@ -25,7 +25,7 @@ public class Main {
                 @Override
                 public int compare(Product p1, Product p2) {
 
-                    return Double.compare(p1.price, p2.price);
+                    return Double.compare(p1.getPrice(), p2.getPrice());
                 }
             });
         }else if (choice==2){
@@ -33,14 +33,14 @@ public class Main {
                 @Override
                 public int compare(Product p3, Product p4) {
 
-                    return Double.compare(p3.price, p4.price);
+                    return Double.compare(p3.getPrice(), p4.getPrice());
                 }
             });
         } else if (choice == 3) {
             Collections.sort(produkts, new Comparator<Product>() {
                 @Override
                 public int compare(Product p1, Product p2) {
-                    return Double.compare(p1.rating, p2.rating);
+                    return Double.compare(p1.getRating(), p2.getRating());
                 }
             });
         } else if (choice == 4) {
@@ -48,7 +48,7 @@ public class Main {
                 @Override
                 public int compare(Product p1, Product p2) {
 
-                    return Double.compare(p1.quantity, p2.quantity);
+                    return Double.compare(p1.getQuantity(), p2.getQuantity());
                 }
             });
         }else{
