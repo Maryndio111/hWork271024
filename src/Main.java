@@ -3,7 +3,7 @@ import java.util.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class OnLineStore {
+public class Main {
     public static void main(String[] args) {
         ArrayList<Product> produkts = new ArrayList<>();
         produkts.add(new Product("Товар 1", 100.0, 10.7, 10));

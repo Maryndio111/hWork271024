@@ -1,8 +1,8 @@
 public class Product {
     String name;
-    int quantity;
-    double price;
-    double rating;
+    private int quantity;
+    private double price;
+    private double rating;
 
     public Product(String name, int quantity, double price, double rating) {
         this.name = name;
@@ -10,6 +10,22 @@ public class Product {
         this.price = price;
         this.rating = rating;
 
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public double getRating() {
+        return rating;
     }
 
     public Product(String name, double v, double price, int rating) {
